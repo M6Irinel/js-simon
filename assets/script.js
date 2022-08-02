@@ -25,7 +25,7 @@ alert(numbers_js.join(', '));
 
 
 // con setTimeout chiamiamo la funzione dopo 30 seccondi
-setTimeout(controls_numbers, 300);
+setTimeout(controls_numbers, 30000);
 
 
 function controls_numbers() {
