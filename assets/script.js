@@ -25,7 +25,7 @@ alert(numbers_js.join(', '));
 
 
 // con setTimeout chiamiamo la funzione dopo 30 seccondi
-setTimeout(controls_numbers, 30000);
+setTimeout(controls_numbers, 300);
 
 
 function controls_numbers() {
@@ -42,8 +42,8 @@ function controls_numbers() {
             // pusciamo il valore del utente in un array
             numbers_user.push(number);
 
-            // SE il numero e incluso nel array dei numeri da indovinare
-            if (numbers_js.includes(number)) {
+            // SE il numero e incluso nel array dei numeri da indovinare e se i numeri indovinati non si trovano nel array dei indovinati
+            if (numbers_js.includes(number) && !number_guessed.includes(number)) {
 
                 // score + 1
                 score++;
